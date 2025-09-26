@@ -1,0 +1,1231 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Imaar El Djazair - Promotion immobilière</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+		<!-- CSS here -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="fontawesome/css/all.min.css">
+        <link rel="stylesheet" href="font-flaticon/flaticon.css">
+        <link rel="stylesheet" href="css/dripicons.css">
+        <link rel="stylesheet" href="css/slick.css">
+        <link rel="stylesheet" href="css/meanmenu.css">
+        <link rel="stylesheet" href="css/default.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <style>
+     
+
+            .residence-section {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                padding: 20px;
+                max-width: 1200px;
+                margin: 2rem auto;
+                z-index: 999;
+            }
+    
+            .image-gallery {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                z-index: 999;
+            }
+    
+            .main-image {
+                width: 100%;
+                height: 300px;
+                border-radius: 8px;
+                background-size: cover;
+                background-position: center;
+                z-index: 999;
+            }
+    
+            .thumbnail-container {
+                display: flex;
+                gap: 10px;
+            }
+    
+            .thumbnail {
+                flex: 1;
+                height: 80px;
+                border-radius: 8px;
+                background-size: cover;
+                background-position: center;
+                cursor: pointer;
+                transition: transform 0.3s ease;
+                z-index: 999;
+            }
+    
+            .thumbnail:hover {
+                transform: scale(1.05);
+                z-index: 999;
+            }
+    
+            .residence-info {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 20px;
+                z-index: 999;
+            }
+    
+            .residence-info h2 {
+                font-size: 24px;
+                color: #004454;
+            }
+    
+            .residence-info p {
+                font-size: 16px;
+                color: #555;
+                line-height: 1.5;
+            }
+    
+            .buttons {
+                display: flex;
+                gap: 10px;
+                z-index: 999;
+            }
+    
+            .buttons a {
+                text-decoration: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                font-size: 14px;
+                text-align: center;
+                transition: background-color 0.3s ease;
+                z-index: 999;
+            }
+    
+            .btn-localisation {
+                background-color: #004454;
+                color: white;
+            }
+    
+            .btn-localisation:hover {
+                background-color: #040404;
+                color: #fff;
+            }
+    
+            .btn-contact {
+                background-color: #C2A56D;
+                color: #004454;
+            }
+    
+            .btn-contact:hover {
+                background-color: #d4a86b;
+            }
+            
+            .btn-vv{
+                background-color: #223A4B;
+                color: #fff;
+            }
+            .btn-vv:hover{
+                background-color: #335C7D;
+                color: #fff;
+            }
+        .section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            z-index: 999;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .section-title h2 {
+            font-size: 28px;
+            color: #004454;
+        }
+
+        .section-title p {
+            font-size: 16px;
+            color: #555;
+            width: 100%;
+        }
+
+        .caracteristiques {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+
+        .caracteristique-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background-color: #C2A56D;
+            padding: 15px;
+            border-radius: 8px;
+            width: 250px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 999;
+        }
+
+        .caracteristique-item i {
+            font-size: 24px;
+            color: #004454;
+        }
+
+        .caracteristique-item span {
+            font-size: 16px;
+            color: #004454;
+        }
+
+        .apartment-types {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .apartment-box {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            width: 200px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 999;
+        }
+
+        .apartment-box h3 {
+            font-size: 20px;
+            color: #004454;
+            margin-bottom: 10px;
+        }
+
+        .apartment-box p {
+            font-size: 16px;
+            color: #555;
+        }
+        
+        .form-container {
+            max-width: 600px;
+            margin: 2rem auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1; /* Ensure the form is above other elements */
+        }
+
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #004454;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 2; /* Ensure inputs and buttons are above other elements */
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            position: relative;
+            z-index: 3; /* Ensure inputs are clickable */
+        }
+
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #004454;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            position: relative;
+            z-index: 3999; /* Ensure button is clickable */
+        }
+
+        .form-group button:hover {
+            background-color: #00333a;
+        }
+
+        /* Background overlay to simulate z-index issue */
+        .background-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 0; /* Ensure overlay is below the form */
+        }
+        </style>
+    </head>
+    <body>
+     <!-- Lines -->
+        <div class="content-lines-wrapper">
+            <div class="content-lines-inner">
+                <div class="content-lines"></div>
+            </div>
+        </div>
+            <!-- Lines -->
+     <!-- header -->
+     <header class="header-area header-three">  
+        <div class="header-top second-header d-none d-md-block">
+             <div class="container">
+                 <div class="row align-items-center">                                              
+                     <div class="col-lg-4 col-md-4 d-none d-lg-block">
+                        <div class="header-social">
+                             <span>
+                                 <a href="https://www.facebook.com/people/Imaar-El-Djazair/100045329689451/?mibextid=kFxxJD" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                 <a href="#" title="LinkedIn"><i class="fab fa-instagram"></i></a>               
+                                 <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                                 <a href="#" title="Twitter"><i class="fab fa-youtube"></i></a>
+                                </span>                    
+                                <!--  /social media icon redux -->                               
+                         </div>
+                     </div>
+                      <div class="col-lg-8 col-md-8 text-right d-none d-lg-block">
+                          <div class="header-cta">
+                            <ul>                                   
+                                 
+                                  <!-- <li>
+                                     <i class="icon far fa-clock"></i>
+                                     <span>Mon - Sat 8:00 - 18:00</span>
+                                 </li> -->
+                                 <li>
+                                     <i class="icon fal fa-envelope"></i>
+                                     <span>contact@imaar-eldjazair.com</span>
+                                 </li>
+                                 <li>
+                                     <i class="icon fal fa-phone"></i>
+                                     <span>+213-560-999-959</span> |
+                                     <span>+213-41-21-12-17</span>
+                                 </li>
+                             </ul>
+                         </div>
+                     </div>
+                     
+                 </div>
+             </div>
+         </div>		
+           <div id="header-sticky" class="menu-area">
+             <div class="container">
+                 <div class="second-menu">
+                     <div class="row align-items-center">
+                         <div class="col-xl-3 col-lg-3">
+                             <div class="logo">
+                                 <a href="/"><img src="img/logo/logo1.svg" alt="logo"></a>
+                             </div>
+                         </div>
+                        <div class="col-xl-8 col-lg-8">
+                           
+                             <div class="main-menu text-right text-xl-right">
+                                 <nav id="mobile-menu">
+                                     <ul>
+                                         <li class="">
+                                             <a href="/">Accueil</a>
+                                             <ul>
+                                                 <!-- <li><a href="/">Home Page 01</a></li>
+                                                 <li><a href="index-2.html">Home Page 02</a></li> -->
+                                             </ul>
+                                         </li>
+                                         <li><a href="about.html">À Propos</a></li>
+                                         <li ><a href="projects.html">Projets</a>
+                                             <!-- <ul>
+                                                <li><a href="projects.html">Tous Nos Projets</a></li>
+                                                 <li><a href="projects.html">Projets Livrés</a></li>
+                                                 <li><a href="projects.html">Projets En Cours</a></li>
+                                                 <li><a href="projects.html">Nouveaux Projets</a></li>
+                                             </ul> -->
+                                         </li>
+                                         <li class=""> 
+                                             <a href="blog.html">Blog</a>
+                                             <ul>
+                                                 <!-- <li><a href="blog.html">Blog</a></li> -->
+                                                 <!-- <li><a href="blog-details.html">Détails du Blog</a></li> -->
+                                             </ul>
+                                         </li>           
+                                         <li class="has-sub"><a href="#">Pages</a>
+                                             <ul>
+                                                <li><a href="services.html">Services</a></li>
+                                                 <li><a href="services-detail.html">Détails des Services</a></li>
+                                                 <li><a href="visite-virtuels.html">Visites Virtuels</a></li>
+                                                 <!-- <li><a href="team.html">Équipe</a></li> -->
+                                                 <li><a href="faq.html">Faq</a></li>
+                                             </ul>
+                                         </li>
+                                        
+                                         <li><a href="contact.html">Nous Contacter</a></li>                                          
+                                                   
+                                     </ul>
+                                 </nav>
+                             </div>
+                         </div>   
+                         <div class="col-xl-1 col-lg-1 text-right d-none d-lg-block mt-30 mb-30 text-right text-xl-right">
+                             <a href="#" class="menu-tigger"><img src="img/bg/toggle-menu.png" alt="logo"></a>
+                         </div>
+                         
+                             <div class="col-12">
+                                 <div class="mobile-menu"></div>
+                             </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </header>
+     <!-- header-end -->
+     <!-- offcanvas-area -->
+             <div class="offcanvas-menu">
+             <span class="menu-close"><i class="fas fa-times"></i></span>
+           <!-- <form role="search" method="get" id="searchform"   class="searchform" action="http://wordpress.zcube.in/xconsulta/">
+                             <input type="text" name="s" id="search" value="" placeholder="Search"  />
+                             <button><i class="fa fa-search"></i></button>
+                         </form> -->
+
+                 
+                 <div id="cssmenu3" class="menu-one-page-menu-container">
+                     <ul id="menu-one-page-menu-2" class="menu">
+                         <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/">Accueil</a></li>
+                         <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="about.html">À Propos</a></li>
+                         <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="services.html">Services</a></li>
+                          <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="visite-virtuels.html">Visites Virtuels </a></li>
+                          <!-- <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="team.html">Équipe </a></li> -->
+                          
+                          <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="projects.html">Projets</a></li>
+                          <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="blog.html">Blog</a></li>
+                         <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="contact.html">Contact</a></li>
+                     </ul>
+                 </div>  
+                 
+                 <div id="cssmenu2" class="menu-one-page-menu-container">
+                     <ul id="menu-one-page-menu-1" class="menu">
+                         <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#home"><span>+213-560-999-959</span></a></li>
+                         <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#home"><span>+213-41-21-12-17</span></a></li>
+                         <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#howitwork"><span>contact@imaar-eldjazair.com</span></a></li>
+                     </ul>
+                 </div>                
+         </div>
+            <div class="offcanvas-overly"></div>
+                 <!-- offcanvas-end -->
+        <!-- main-area -->
+        <main>
+            
+            <!-- search-popup -->
+		<div class="modal fade bs-example-modal-lg search-bg popup1" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content search-popup">
+					<div class="text-center">
+						<a href="#" class="close2" data-dismiss="modal" aria-label="Close">× close</a>
+					</div>
+					<div class="row search-outer">
+						<div class="col-md-11"><input type="text" placeholder="Search for products..." /></div>
+						<div class="col-md-1 text-right"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /search-popup -->
+            <!-- breadcrumb-area -->
+              <section class="breadcrumb-area d-flex  p-relative align-items-center" >
+                <div class="image-layer" style="background: url(img/testimonial/test-bg.png);background-size: cover;">
+                        <div class="overlay"></div>
+                    </div>
+                   <!-- Lines -->
+                <div class="content-lines-wrapper2">
+                    <div class="content-lines-inner2">
+                        <div class="content-lines2"></div>
+                    </div>
+                </div>
+                    <!-- Lines -->
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-12 col-lg-12">
+                            <div class="breadcrumb-wrap text-left">
+                                <div class="breadcrumb-title">
+                                    <h2>Résidence RUBIS</h2>    
+                                    <div class="breadcrumb-wrap">
+                              
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="/">Accueil
+                                        </a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Résidence RUBIS</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            <!-- breadcrumb-area-end -->
+			<!-- gualery and a title -->
+            <div class="residence-section">
+                <!-- Image Gallery -->
+                <div class="image-gallery">
+                    <div id="mainImage" class="main-image" style="background-image: url('img/testimonial/test-1-bg.jpg');"></div>
+                    <div class="thumbnail-container">
+                        <div class="thumbnail" style="background-image: url('img/testimonial/2-2.jpg');" onclick="changeImage('img/testimonial/2-2.jpg')"></div>
+                        <div class="thumbnail" style="background-image: url('img/testimonial/5-2.jpg');" onclick="changeImage('img/testimonial/5-2.jpg')"></div>
+                        <div class="thumbnail" style="background-image: url('img/testimonial/5-3.jpg');" onclick="changeImage('img/testimonial/5-3.jpg')"></div>
+                        <div class="thumbnail" style="background-image: url('img/testimonial/test-1-bg.jpg');" onclick="changeImage('img/testimonial/test-1-bg.jpg')"></div>
+                        <div class="thumbnail" style="background-image: url('img/testimonial/4-3.jpg');" onclick="changeImage('img/testimonial/4-3.jpg')"></div>
+                    </div>
+                </div>
+        
+                <!-- Residence Info -->
+                <div class="residence-info">
+                    <h2>Résidence RUBIS</h2>
+                    <p>
+                        Découvrez cette résidence moderne et spacieuse, idéale pour les familles recherchant confort et praticité.
+                        Située dans un quartier calme, elle offre des finitions de qualité et des espaces bien agencés.
+                    </p>
+                    <div class="buttons">
+                        <a href="https://maps.app.goo.gl/aCvYCec2MDaqSWdF7" target="_blank" class="btn-localisation">Localisation</a>
+                        <a href="#contact" class="btn-contact">Contact</a>
+                        <a href="/visite-virtuels.html" class="btn-vv">Visite Virtuel</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <!-- gualery and a title end  -->
+            
+ <!-- À Propos Section -->
+ <div class="section">
+    <div class="section-title">
+        <h2>À Propos</h2>
+        <p>Nichée parmi les maisons de maître dans un quartier tranquille et sûre, Cette petite résidence offre calme et sérénité à ses habitants dans le plus pur style moderne avec une pointe de luxe.
+
+            Offrant des prestations Dignes des plus grandes « avec son entrée et escaliers tout en marbre » et jouissant de vues dégagées sur l’horizon d’Oran. On pourra y contempler le fort de Santa Cruz y apercevoir la mer et surplomber la ville et ce sans vis-à-vis.
+            
+            Equipements premiums et matériaux de luxe, fonctionnelles et pratiques, confort et accessibilité, tels sont là les avantages qui s’offriront au petit nombre ”chanceux” de ses résidents.</p>
+    </div>
+</div>
+
+<!-- Caractéristiques Section -->
+<div class="section">
+    <div class="section-title">
+        <h2>Caractéristiques</h2>
+    </div>
+    <div class="caracteristiques">
+        <div class="caracteristique-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Climatisation centralisée</span>
+        </div>
+        <div class="caracteristique-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Double vitrage</span>
+        </div>
+        <div class="caracteristique-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Cuisine italienne moderne</span>
+        </div>
+        <div class="caracteristique-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Chauffage central individuel</span>
+        </div>
+        <div class="caracteristique-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Vues panoramiques</span>
+        </div>
+        <div class="caracteristique-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Sécurité 24h/24</span>
+        </div>
+        <div class="caracteristique-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Salle de sport</span>
+        </div>
+        <div class="caracteristique-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Deux ascenseurs</span>
+        </div>
+        <div class="caracteristique-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Entretien immeuble</span>
+        </div>
+        <div class="caracteristique-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Meubles haut de gamme</span>
+        </div>
+        <div class="caracteristique-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Dalles modernes</span>
+        </div>
+    </div>
+</div>
+
+<!-- Prestatons Section -->
+
+<div class="section">
+    <div class="section-title">
+        <h2>Prestations de la résidence :</h2>
+    </div>
+    <div class="caracteristiques">
+        <div class="caracteristique-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Garderie enfants</span>
+        </div>
+        <div class="caracteristique-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Salle de sport</span>
+        </div>
+        <div class="caracteristique-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Jardin central</span>
+        </div>
+        <div class="caracteristique-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Parking sécurisé</span>
+        </div>
+        <div class="caracteristique-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Proche tramway</span>
+        </div>
+        <div class="caracteristique-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Écoles à proximité</span>
+        </div>
+    </div>
+</div>
+
+ <!-- À Propos Section end -->
+
+ <!-- Types d'Appartements Section -->
+ <div class="section">
+    <div class="section-title">
+        <h2>Types d'Appartements</h2>
+    </div>
+    <div class="apartment-types">
+        <div class="apartment-box">
+            <h3>F2</h3>
+            <p>Surface: 50 m²</p>
+        </div>
+        <div class="apartment-box">
+            <h3>F3</h3>
+            <p>Surface: 75 m²</p>
+        </div>
+        <div class="apartment-box">
+            <h3>F4</h3>
+            <p>Surface: 100 m²</p>
+        </div>
+        <div class="apartment-box">
+            <h3>F5</h3>
+            <p>Surface: 120 m²</p>
+        </div>
+    </div>
+</div>
+         
+ <!-- Types d'Appartements Section section -->
+
+
+
+ <!-- plans --> 
+ <section class="apartments pb-110">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="section-title mb-30">
+                    <h5>Nos Plans</h5>
+                    <h2>Découvrez Notre Espace de Vie de l'Appartement</h2>
+                </div>
+                <nav>
+                    <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active" data-tab="50" role="tab" aria-selected="true">50m² plat</a>
+                        <a class="nav-item nav-link" data-tab="75" role="tab" aria-selected="false">75m² plat</a>
+                        <a class="nav-item nav-link" data-tab="100" role="tab" aria-selected="false">100m² plat</a>
+                        <a class="nav-item nav-link" data-tab="120" role="tab" aria-selected="false">120m² plat</a>
+                    </div>
+                </nav>
+                <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+                    <div class="tab-pane active" id="50">
+                        <p>Un espace moderne et fonctionnel, idéal pour les familles recherchant confort et praticité.</p>
+                        <ul>
+                            <li><span class="before">Superficie totale : </span> <span class="after">50m² </span></li>
+                            <li><span class="before">Nombre total d'étages :</span> <span class="after">11 étages</span></li>
+                            <li><span class="before">Aire de stationnement : </span> <span class="after">4 grands emplacements</span></li>
+                            <li><span class="before">Espace social : </span> <span class="after">1000m² </span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" id="75">
+                        <p></p>
+                        <ul>
+                            <li><span class="before">Superficie totale : </span> <span class="after"></span></li>
+                            <li><span class="before">Nombre total d'étages :</span> <span class="after"></span></li>
+                            <li><span class="before">Aire de stationnement : </span> <span class="after"></span></li>
+                            <li><span class="before">Espace social : </span> <span class="after"></span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" id="100">
+                        <p></p>
+                        <ul>
+                            <li><span class="before">Superficie totale : </span> <span class="after"></span></li>
+                            <li><span class="before">Nombre total d'étages : </span> <span class="after"></span></li>
+                            <li><span class="before">Aire de stationnement : </span> <span class="after"></span></li>
+                            <li><span class="before">Espace social : </span> <span class="after"></span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" id="120">
+                        <p></p>
+                        <ul>
+                            <li><span class="before">Superficie totale : </span> <span class="after"></span></li>
+                            <li><span class="before">Nombre total d'étages : </span> <span class="after"></span></li>
+                            <li><span class="before">Aire de stationnement : </span> <span class="after"></span></li>
+                            <li><span class="before">Espace social : </span> <span class="after"></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="apartments-img">
+                    <img id="apartment-image" src="img/bg/plan1.png" alt="floor-chart" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- contact form -->
+<div id="contact" class="form-container">
+    <h2>Contactez-nous</h2>
+    <form id="whatsappForm">
+        <div class="form-group">
+            <label for="email">Votre Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="prenom">Votre Prénom</label>
+            <input type="text" id="prenom" name="prenom" required>
+        </div>
+        <div class="form-group">
+            <label for="nom">Votre Nom</label>
+            <input type="text" id="nom" name="nom" required>
+        </div>
+        <div class="form-group">
+            <label for="telephone">Votre Numéro Du Téléphone</label>
+            <input type="tel" id="telephone" name="telephone" required>
+        </div>
+        <div class="form-group">
+            <label for="wilaya">Votre Wilaya</label>
+            <select id="wilaya" name="wilaya" required>
+                <option value="" disabled selected>Choisissez une wilaya</option>
+                <option value="Adrar">Adrar</option>
+                <option value="Chlef">Chlef</option>
+                <option value="Laghouat">Laghouat</option>
+                <option value="Oum El Bouaghi">Oum El Bouaghi</option>
+                <option value="Batna">Batna</option>
+                <option value="Béjaïa">Béjaïa</option>
+                <option value="Biskra">Biskra</option>
+                <option value="Béchar">Béchar</option>
+                <option value="Blida">Blida</option>
+                <option value="Bouira">Bouira</option>
+                <option value="Tamanrasset">Tamanrasset</option>
+                <option value="Tébessa">Tébessa</option>
+                <option value="Tlemcen">Tlemcen</option>
+                <option value="Tiaret">Tiaret</option>
+                <option value="Tizi Ouzou">Tizi Ouzou</option>
+                <option value="Alger">Alger</option>
+                <option value="Djelfa">Djelfa</option>
+                <option value="Jijel">Jijel</option>
+                <option value="Sétif">Sétif</option>
+                <option value="Saïda">Saïda</option>
+                <option value="Skikda">Skikda</option>
+                <option value="Sidi Bel Abbès">Sidi Bel Abbès</option>
+                <option value="Annaba">Annaba</option>
+                <option value="Guelma">Guelma</option>
+                <option value="Constantine">Constantine</option>
+                <option value="Médéa">Médéa</option>
+                <option value="Mostaganem">Mostaganem</option>
+                <option value="M'Sila">M'Sila</option>
+                <option value="Mascara">Mascara</option>
+                <option value="Ouargla">Ouargla</option>
+                <option value="Oran">Oran</option>
+                <option value="El Bayadh">El Bayadh</option>
+                <option value="Illizi">Illizi</option>
+                <option value="Bordj Bou Arreridj">Bordj Bou Arreridj</option>
+                <option value="Boumerdès">Boumerdès</option>
+                <option value="El Tarf">El Tarf</option>
+                <option value="Tindouf">Tindouf</option>
+                <option value="Tissemsilt">Tissemsilt</option>
+                <option value="El Oued">El Oued</option>
+                <option value="Khenchela">Khenchela</option>
+                <option value="Souk Ahras">Souk Ahras</option>
+                <option value="Tipaza">Tipaza</option>
+                <option value="Mila">Mila</option>
+                <option value="Aïn Defla">Aïn Defla</option>
+                <option value="Naâma">Naâma</option>
+                <option value="Aïn Témouchent">Aïn Témouchent</option>
+                <option value="Ghardaïa">Ghardaïa</option>
+                <option value="Relizane">Relizane</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="profession">Votre Profession</label>
+            <select id="profession" name="profession" required>
+                <option value="" disabled selected>Choisissez Votre Profession</option>
+                <option value="Ingenieur">Ingenieur</option>
+                <option value="Dentiste">Dentiste</option>
+                <option value="Enseignant">Enseignant</option>
+                <option value="Informaticien">Informaticien</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="appartement">Appartement</label>
+            <select id="appartement" name="appartement" required>
+                <option value="" disabled selected>Choisissez un type</option>
+                <option value="F2">F2</option>
+                <option value="F3">F3</option>
+                <option value="F4">F4</option>
+                <option value="F5">F5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <button type="submit" >Envoyer</button>
+        </div>
+    </form>
+</div>
+
+        </main>
+        <!-- main-area-end -->
+         <!-- footer -->
+         <footer class="footer-bg footer-p">
+            <div class="footer-top pt-70 pb-40  p-relative" style="background: #2D3743;">
+                 <!-- Lines -->
+                    <div class="content-lines-wrapper2">
+                        <div class="content-lines-inner2">
+                            <div class="content-lines2"></div>
+                        </div>
+                    </div>
+                   <!-- Lines -->
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-xl-4 col-lg-4 col-sm-6">
+                            
+                          
+
+
+
+                                
+                                <div class="main-container">
+                                    <div class="image-container">
+                                      <img src="img/logo/download.jpg" alt="Catalogue 2025">
+                                    </div>
+                                    <button class="btn-telecharger" onclick="downloadPdf()">Télécharger</button>
+                                    <p>Téléchargez notre nouveau catalogue 2025</p>
+                                  </div>
+                                  
+                                  <!-- Popup Form -->
+                                  <div class="popup" id="popupForm">
+                                    <div class="popup-content">
+                                      <span class="close-btn" onclick="closePopup()">&times;</span>
+                                      <h2>Veuillez remplir ce formulaire</h2>
+                                      <form target="_blank" action="catalog.html" method="GET" onsubmit="resetForm(event)">
+                                        <label for="name">Nom et prénom *</label>
+                                        <input type="text" id="name" name="name" required>
+                                  
+                                        <label for="email">Email *</label>
+                                        <input type="email" id="email" name="email" required>
+                                  
+                                        <label for="phone">Téléphone *</label>
+                                        <input type="tel" id="phone" name="phone" required>
+                                  
+                                        <div class="privacy">
+                                          <input type="checkbox" id="privacy" name="privacy" required>
+                                          <label for="privacy">
+                                            Imaar El Djazair assure la protection de votre vie privée en utilisant vos données personnelles uniquement pour gérer votre profil et vous fournir les produits et services demandés. Vous avez la possibilité de vous désabonner à tout moment.
+                                          </label>
+                                        </div>
+                                  
+                                        <button type="submit" class="btn-envoyer">Envoyer</button>
+                                      </form>
+                                    </div>
+                                  </div>
+                        
+                        
+                        </div>
+                        
+                          <div class="col-xl-4 col-lg-4 col-sm-6">
+                            <div class="footer-widget mb-30">
+                                
+                                <div class="f-contact">
+                                    <ul>
+                                        
+                                <div class="f-widget-title">
+                                    <h2>Contact</h2>
+                                </div>
+                                    <li>
+                                        <i class="icon fal fa-phone"></i>
+                                        <span>+213-560-999-959</span>
+                                        <span>+213-41-21-12-17</span>
+                                    </li>
+                                   <li><i class="icon fal fa-envelope"></i>
+                                        <span>
+                                            <!-- <a href="mailto:info@example.com">contact@imaar-eldjazair.com </a> -->
+contact@imaar-eldjazair.com 
+                                       
+                                       </span>
+                                    </li>
+                                    <li>
+                                        <i class="icon fal fa-map-marker-check"></i>
+                                        <span> immobilière les frères SAADI,
+                                            31012 31000 Oran, AlgeriaF</span>
+                                    </li>
+                                    
+                                </ul>
+                                    
+                                    </div>
+                            </div>
+                        </div>
+						<div class="col-xl-2 col-lg-2 col-sm-6">
+                            <div class="footer-widget mb-30">
+                                <div class="f-widget-title">
+                                    <h2>Liens</h2>
+                                </div>
+                                <div class="footer-link">
+                                    <ul>                                        
+                                        <li><a href="/">Accueil
+                                        </a></li>
+                                        <li><a href="about.html"> À Propos
+                                        </a></li>
+                                        <li><a href="services.html"> Services </a></li>
+                                        <li><a href="contact.html"> Nous Contacter
+                                        </a></li>
+                                        <li><a href="blog.html">Blog </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-sm-6">
+                            <div class="footer-widget mb-30">
+                                <div class="f-widget-title">
+                                    <h2>Services</h2>
+                                </div>
+                                <div class="footer-link">
+                                    <ul>
+                                        <li><a href="faq.html">FAQ</a></li>
+                                        <li><a href="#">Support</a></li>
+                                        <li><a href="#">Confidentialité</a></li>
+                                        <li><a href="#">Conditions générales</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>  
+                      
+                        
+                    </div>
+                    <div class="f-widget-title logo mb-30">
+                        <a href="/"><img src="img/logo/logo2.svg" alt="img"></a>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-wrap">
+                <!-- Lines -->
+                    <div class="content-lines-wrapper2">
+                        <div class="content-lines-inner2">
+                            <div class="content-lines2"></div>
+                        </div>
+                    </div>
+                   <!-- Lines -->
+                <div class="container">
+                    <div class="row align-items-center">
+                        
+                        <div class="col-lg-6 copyright-text">                         
+                              
+                            Copyright 2025 &copy; <b>Imaar El Djazair</b>. Tout les droits réservés. Designed by <a href="https://exped360.com/" target="_blank" alt="Agence web" style="color: #2D3743"><b>Exped</b></a>   
+                        </div>
+                        <div class="col-lg-6 copyrght-links text-xl-right">                       
+                           <div class="footer-social">                                    
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </div>        
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer-end -->
+
+		<!-- JS here -->
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="js/vendor/jquery-3.6.0.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/ajax-form.js"></script>
+        <script src="js/paroller.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/js_isotope.pkgd.min.js"></script>
+        <script src="js/imagesloaded.min.js"></script>
+        <script src="js/parallax.min.js"></script>
+         <script src="js/jquery.waypoints.min.js"></script>
+        <script src="js/jquery.counterup.min.js"></script>
+        <script src="js/jquery.scrollUp.min.js"></script>
+        <script src="js/jquery.meanmenu.min.js"></script>
+        <script src="js/parallax-scroll.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/element-in-view.js"></script>
+        <script src="js/main.js"></script>
+        
+<script>
+    function downloadPdf() {
+      // Replace 'path/to/your/file.pdf' with the actual path to your PDF file
+      var pdfUrl = 'document1.pdf';
+    
+      // Create a temporary link element
+      var link = document.createElement('a');
+    
+      // Set the href attribute to the PDF URL
+      link.href = pdfUrl;
+    
+      // Set the download attribute to specify the filename
+      link.download = 'catalog.pdf'; // Replace 'your-file-name.pdf' with the desired filename
+    
+      // Append the link to the document
+      document.body.appendChild(link);
+    
+      // Trigger the click event to start the download
+      link.click();
+    
+      // Remove the link from the document
+      document.body.removeChild(link);
+    }
+    </script>
+        <script>
+            
+            // Open the popup
+function openPopup() {
+  document.getElementById("popupForm").style.display = "flex";
+}
+
+// Close the popup
+function closePopup() {
+  document.getElementById("popupForm").style.display = "none";
+}
+
+
+
+
+// Close the popup when clicking outside the form
+window.addEventListener("click", function (event) {
+  const popup = document.getElementById("popupForm");
+  const popupContent = document.querySelector(".popup-content");
+  if (event.target === popup) {
+    popup.style.display = "none";
+  }
+});
+
+// Reset the form after submission
+function resetForm(event) {
+  event.preventDefault(); // Prevent default form submission
+  const form = event.target; // Get the form element
+  form.reset(); // Reset the form fields
+  closePopup(); // Close the popup
+  window.open("https://example.com", "_blank"); // Redirect to another page in a new tab
+}
+        </script>
+         <script>
+            function changeImage(imageUrl) {
+                const mainImage = document.getElementById('mainImage');
+                mainImage.style.backgroundImage = `url('${imageUrl}')`;
+            }
+        </script>
+        <script>
+            const tabs = document.querySelectorAll('.nav-link');
+            const tabContent = document.querySelectorAll('.tab-pane');
+            const image = document.getElementById('apartment-image');
+    
+            const tabData = {
+                '50': {
+                    image: 'img/bg/plan1.png',
+                    description: 'Un espace moderne et fonctionnel, idéal pour les familles recherchant confort et praticité.',
+                    details: ['50m² ', '11 étages', '4 grands emplacements', '1000m² ']
+                },
+                '75': {
+                    image: 'img/bg/plan2.png',
+                    description: 'Un logement spacieux et élégant, parfait pour un style de vie raffiné et convivial.',
+                    details: ['75m² ', '15 étages', '5 grands emplacements', '1200m² ']
+                },
+                '100': {
+                    image: 'img/bg/plan3.webp',
+                    description: 'Un cadre luxueux et harmonieux, conçu pour répondre à toutes vos attentes',
+                    details: ['100m² ', '18 étages', '6 grands emplacements', '1300m² ']
+                },
+                '120': {
+                    image: 'img/bg/plan2.png',
+                    description: 'Un cadre luxueux et harmonieux, conçu pour répondre à toutes vos attentes',
+                    details: ['120m² ', '18 étages', '6 grands emplacements', '1300m² ']
+                }
+            };
+    
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    const tabId = tab.getAttribute('data-tab');
+    
+                    // Update active tab
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tab.classList.add('active');
+    
+                    // Update tab content
+                    tabContent.forEach(content => content.classList.remove('active'));
+                    const activeContent = document.getElementById(tabId);
+                    activeContent.classList.add('active');
+    
+                    // Update content dynamically
+                    const data = tabData[tabId];
+                    activeContent.querySelector('p').innerHTML = data.description;
+                    const details = activeContent.querySelectorAll('.after');
+                    details.forEach((detail, index) => {
+                        detail.innerHTML = data.details[index];
+                    });
+    
+                    // Update image
+                    image.src = data.image;
+                });
+            });
+        </script>
+          <script>
+            function getMessageDiv() {
+                let messageDiv = document.getElementById('responseMessage');
+                if (!messageDiv) {
+                    messageDiv = document.createElement('div');
+                    messageDiv.id = 'responseMessage';
+                    messageDiv.className = 'message';
+                    // Insert after the form
+                    const form = document.getElementById('whatsappForm');
+                    form.parentNode.insertBefore(messageDiv, form.nextSibling);
+                }
+                return messageDiv;
+            }
+        
+            document.getElementById('whatsappForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Get all form values
+                const email = document.getElementById('email').value;
+                const prenom = document.getElementById('prenom').value;
+                const telephone = document.getElementById('telephone').value;
+                const wilaya = document.getElementById('wilaya').value;
+                const profession = document.getElementById('profession').value;
+                const appartement = document.getElementById('appartement').value;
+        
+                // Basic validation
+                if (!email || !prenom || !telephone || !wilaya || !profession || !appartement) {
+                    const messageDiv = getMessageDiv();
+                    messageDiv.style.display = 'block';
+                    messageDiv.className = 'message error';
+                    messageDiv.textContent = 'Veuillez remplir tous les champs obligatoires';
+                    return;
+                }
+        
+                // Create FormData object
+                const formData = new FormData(this);
+                const searchParams = new URLSearchParams();
+        
+                // Add each form field to the URLSearchParams
+                for (const pair of formData) {
+                    searchParams.append(pair[0], pair[1]);
+                }
+        
+                // Show loading message
+                const messageDiv = getMessageDiv();
+                messageDiv.style.display = 'block';
+                messageDiv.className = 'message';
+                messageDiv.textContent = 'Envoi en cours...';
+        
+                // Send the form data
+                fetch('send_mail_pr3.php', {
+                    method: 'POST',
+                    body: searchParams.toString(),
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    }
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Erreur réseau ou serveur');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    const messageDiv = getMessageDiv();
+                    messageDiv.style.display = 'block';
+                    
+                    if(data.success) {
+                        messageDiv.className = 'message success';
+                        messageDiv.textContent = 'Votre message a été envoyé avec succès!';
+                        this.reset(); // Reset form on success
+                        
+                        // Scroll to message
+                        messageDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        
+                        // Hide message after 5 seconds
+                        setTimeout(() => {
+                            messageDiv.style.display = 'none';
+                        }, 5000);
+                    } else {
+                        messageDiv.className = 'message error';
+                        messageDiv.textContent = 'Échec de l\'envoi: ' + (data.message || 'Erreur inconnue');
+                    }
+                })
+                .catch(error => {
+                    const messageDiv = getMessageDiv();
+                    messageDiv.style.display = 'block';
+                    messageDiv.className = 'message error';
+                    messageDiv.textContent = 'Une erreur s\'est produite: ' + error.message;
+                    
+                    // Log error for debugging
+                    console.error('Error:', error);
+                });
+            });
+        
+            // Optional: Add input validation
+            document.getElementById('telephone').addEventListener('input', function(e) {
+                // Allow only numbers and some special characters
+                this.value = this.value.replace(/[^\d+\-\s()]/g, '');
+            });
+        
+            document.getElementById('prenom').addEventListener('input', function(e) {
+                // Allow only letters, spaces, and some special characters
+                this.value = this.value.replace(/[^a-zA-ZÀ-ÿ\s'-]/g, '');
+            });
+        </script>
+    <!-- FontAwesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF Viewer - Catalog</title>
+  <style>
+    body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      overflow: hidden;
+      background-color: rgb(40, 40, 40);
+    }
+
+    embed {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <!-- Embed the PDF document -->
+  <embed src="document.pdf" type="application/pdf" width="100%" height="100%">
+</body>
+</html>

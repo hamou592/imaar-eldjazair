@@ -150,4 +150,4 @@ PHP (for mail sending)
 
 ✨ Credits
 
-Developed by [[Your Name]](https://github.com/hamou592)
+Developed by [[Hamou Nasreddine]](https://github.com/hamou592)

@@ -126,7 +126,7 @@ Contact Form with PHP mail sending <img width="1888" height="917" alt="image" sr
 
 Clone the repository:
 
-git clone [https://github.com/yourusername/promotion-immobiliere.git](https://github.com/hamou592/imaar-eldjazair)
+git clone [https://github.com/hamou592/promotion-immobiliere.git](https://github.com/hamou592/imaar-eldjazair)
 
 
 Navigate into the project folder:
